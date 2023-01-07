@@ -3,10 +3,10 @@ import { Col, Row } from "react-bootstrap";
 import {
   SiLinux,
   SiVisualstudiocode,
-  SiPostman,
-  SiHeroku,
-  SiVercel,
 } from "react-icons/si";
+
+import micro from "../../Assets/skills/micro.svg.png";
+import jup from "../../Assets/skills/jup.png";
 
 function Toolstack() {
   return (
@@ -17,14 +17,16 @@ function Toolstack() {
       <Col xs={4} md={2} className="tech-icons">
         <SiVisualstudiocode />
       </Col>
+
       <Col xs={4} md={2} className="tech-icons">
-        <SiPostman />
+        <span title="Microsoft">
+        <img src={micro} width="100"/>
+        </span>
       </Col>
       <Col xs={4} md={2} className="tech-icons">
-        <SiVercel />
-      </Col>
-      <Col xs={4} md={2} className="tech-icons">
-        <SiHeroku />
+        <span title="Jupyter Notebook">
+        <img src={jup} width="100"/>
+        </span>
       </Col>
     </Row>
   );

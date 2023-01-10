@@ -5,6 +5,9 @@ import homeLogo from "../../Assets/about_me.png";
 import Particle from "../Particle";
 import Home2 from "./Home2";
 import Type from "./Type";
+import Tilt from "react-parallax-tilt";
+import laptopImg from "../../Assets/profile-pic.jpg";
+
 
 function Home() {
   return (
@@ -32,12 +35,9 @@ function Home() {
             </Col>
 
             <Col md={5} style={{ paddingBottom: 20 }}>
-              <img
-                src={homeLogo}
-                alt="home pic"
-                className="img-fluid"
-                style={{ maxHeight: "450px" }}
-              />
+              <Tilt>
+                <img src={laptopImg} className="img-fluid" alt="avatar" />
+              </Tilt>
             </Col>
           </Row>
         </Container>

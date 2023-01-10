@@ -1,12 +1,11 @@
 import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import Particle from "../Particle";
-// import Github from "./Github";
 import Techstack from "./Techstack";
 import Aboutcard from "./AboutCard";
-import laptopImg from "../../Assets/profile-pic.jpg";
 import Toolstack from "./Toolstack";
-import Tilt from "react-parallax-tilt";
+import homeLogo from "../../Assets/about_me.png";
+
 
 function About() {
   return (
@@ -32,10 +31,13 @@ function About() {
             style={{ paddingTop: "120px", paddingBottom: "50px" }}
             className="about-img"
           >
-            <Tilt>
-              <img src={laptopImg} className="img-fluid" alt="avatar" />
-            </Tilt>
-            {/* <img src={laptopImg} alt="about" className="img-fluid" /> */}
+          <img
+            src={homeLogo}
+            alt="home pic"
+            className="img-fluid"
+            style={{ maxHeight: "450px" }}
+          />
+
           </Col>
         </Row>
         <h1 className="project-heading">

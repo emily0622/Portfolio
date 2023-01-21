@@ -4,15 +4,11 @@
   "private": true,
   "dependencies": {
     "@react-pdf/renderer": "^2.3.0",
-    "@testing-library/jest-dom": "^5.16.5",
-    "@testing-library/react": "^12.1.5",
-    "@testing-library/user-event": "^13.5.0",
     "axios": "^0.26.1",
     "bootstrap": "^5.2.3",
     "react": "^17.0.2",
     "react-bootstrap": "^2.7.0",
     "react-dom": "^17.0.2",
-    "react-github-calendar": "^3.4.0",
     "react-icons": "^4.7.1",
     "react-parallax-tilt": "^1.7.85",
     "react-pdf": "^5.7.2",
@@ -22,16 +18,8 @@
     "typewriter-effect": "^2.19.0"
   },
   "scripts": {
-    "start": "node --max_old_space_size=1100 node_modules/.bin/react-scripts start",
-    "build": "node --max_old_space_size=1100 node_modules/.bin/react-scripts build",
-    "test": "react-scripts test",
-    "eject": "react-scripts eject"
-  },
-  "eslintConfig": {
-    "extends": [
-      "react-app",
-      "react-app/jest"
-    ]
+    "start": "react-scripts start",
+    "build": "react-scripts build"
   },
   "browserslist": {
     "production": [
@@ -44,8 +32,5 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
-  },
-  "engines": {
-    "node": "18.13.0"
   }
 }

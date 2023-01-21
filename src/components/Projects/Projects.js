@@ -1,7 +1,6 @@
 import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import ProjectCard from "./ProjectCards";
-import Particle from "../Particle";
 import engstores from "../../Assets/Projects/engstores.png";
 import whiskers from "../../Assets/Projects/whiskers.png";
 import debias from "../../Assets/Projects/debiasing.png";
@@ -11,7 +10,6 @@ import EPAI from "../../Assets/Projects/EPAI.png";
 function Projects() {
   return (
     <Container fluid className="project-section">
-      <Particle />
       <Container>
         <h1 className="project-heading">
           Some of my Recent <strong className="purple">Projects </strong>

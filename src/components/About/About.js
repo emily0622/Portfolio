@@ -1,9 +1,9 @@
 import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
-import Techstack from "./Techstack";
+// import Techstack from "./Techstack";
 import Aboutcard from "./AboutCard";
-import Toolstack from "./Toolstack";
-import homeLogo from "../../Assets/about_me.png";
+// import Toolstack from "./Toolstack";
+import homeLogo from "../../Assets/profile-pic.jpg";
 
 
 function About() {
@@ -42,12 +42,12 @@ function About() {
           Professional <strong className="purple">Skillset </strong>
         </h1>
 
-        <Techstack />
+        {/* <Techstack /> */}
 
         <h1 className="project-heading">
           <strong className="purple">Tools</strong> I use
         </h1>
-        <Toolstack />
+        {/* <Toolstack /> */}
 
         {/* <Github /> */}
       </Container>

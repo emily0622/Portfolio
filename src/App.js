@@ -30,7 +30,7 @@ function App() {
   return (
     <Router>
       {/* <Preloader load={load} /> */}
-      <div className="App" id={load ? "no-scroll" : "scroll"}>
+      // <div className="App" id={load ? "no-scroll" : "scroll"}>
         <Navbar />
         {/* <ScrollToTop /> */}
         <Routes>
@@ -38,11 +38,11 @@ function App() {
           <Route path="/project" element={<Projects />} />
           <Route path="/about" element={<About />} />
           {/* <Route path="/resume" element={<Resume />} /> */}
-          <Route path="*" element={<Navigate to="/"/>} />
+          {/* <Route path="*" element={<Navigate to="/"/>} /> */}
         </Routes>
         {/* <Footer /> */}
-      </div>
-    </Router>
+      // </div>
+    // </Router>
   );
 }
 

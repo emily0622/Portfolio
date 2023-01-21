@@ -5,6 +5,8 @@ import myImg from "../../Assets/diff_avatar.png";
 import Tilt from "react-parallax-tilt";
 import {
   AiFillGithub,
+  AiOutlineTwitter,
+  AiFillInstagram,
 } from "react-icons/ai";
 import { FaLinkedinIn } from "react-icons/fa";
 

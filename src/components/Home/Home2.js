@@ -2,13 +2,13 @@ import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
 // import myImg from "../../Assets/avatar.svg";
 // import myImg from "../../Assets/diff_avatar.png";
-// import Tilt from "react-parallax-tilt";
-import {
-  AiFillGithub,
+// import {
+  // AiFillGithub,
   // AiOutlineTwitter,
   // AiFillInstagram,
-} from "react-icons/ai";
-import { FaLinkedinIn } from "react-icons/fa";
+// } from "react-icons/ai";
+import git from "../../Assets/skills/git.png";
+// import { FaLinkedinIn } from "react-icons/fa";
 
 function Home2() {
   return (
@@ -53,11 +53,6 @@ function Home2() {
               </i>
             </p>
           </Col>
-          {/* <Col md={4} className="myAvtar">
-            <Tilt>
-              <img src={myImg} className="img-fluid" alt="avatar" />
-            </Tilt>
-          </Col> */}
         </Row>
         <Row>
           <Col md={12} className="home-about-social">
@@ -73,7 +68,8 @@ function Home2() {
                   rel="noreferrer"
                   className="icon-colour  home-social-icons"
                 >
-                  <AiFillGithub />
+                  {/* <AiFillGithub /> */}
+                  <img src={git} width="20"/>
                 </a>
               </li>
               <li className="social-icons">
@@ -83,7 +79,7 @@ function Home2() {
                   rel="noreferrer"
                   className="icon-colour  home-social-icons"
                 >
-                  <FaLinkedinIn />
+                  {/* <FaLinkedinIn /> */}
                 </a>
               </li>
             </ul>

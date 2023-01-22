@@ -5,16 +5,19 @@ import Container from "react-bootstrap/Container";
 import logo from "../Assets/logo_me.png";
 import Button from "react-bootstrap/Button";
 import { Link } from "react-router-dom";
-import { CgGitFork } from "react-icons/cg";
-// import { ImBlog } from "react-icons/im";
-import {
-  AiFillStar,
-  AiOutlineHome,
-  AiOutlineFundProjectionScreen,
-  AiOutlineUser,
-} from "react-icons/ai";
+import git from "../Assets/skills/git.png";
+import homeicon from "../Assets/icons/home.jpg";
+import abouticon from "../Assets/icons/about.png";
+import projecticon from "../Assets/icons/projects.png";
 
-import { CgFileDocument } from "react-icons/cg";
+// import { ImBlog } from "react-icons/im";
+// import {
+//   AiOutlineHome,
+//   AiOutlineFundProjectionScreen,
+//   AiOutlineUser,
+// } from "react-icons/ai";
+
+// import { CgFileDocument } from "react-icons/cg";
 
 function NavBar() {
   const [expand, updateExpanded] = useState(false);
@@ -55,7 +58,9 @@ function NavBar() {
           <Nav className="ms-auto" defaultActiveKey="#home">
             <Nav.Item>
               <Nav.Link as={Link} to="/" onClick={() => updateExpanded(false)}>
-                <AiOutlineHome style={{ marginBottom: "2px" }} /> Home
+                {/* <AiOutlineHome style={{ marginBottom: "2px" }} /> Home */}
+                <img src={homeicon} width="20"/>
+                Home
               </Nav.Link>
             </Nav.Item>
 
@@ -65,7 +70,9 @@ function NavBar() {
                 to="/about"
                 onClick={() => updateExpanded(false)}
               >
-                <AiOutlineUser style={{ marginBottom: "2px" }} /> About
+                <img src={abouticon} width="20"/>
+                {/* <AiOutlineUser style={{ marginBottom: "2px" }} /> About */}
+                About
               </Nav.Link>
             </Nav.Item>
 
@@ -75,9 +82,10 @@ function NavBar() {
                 to="/project"
                 onClick={() => updateExpanded(false)}
               >
-                <AiOutlineFundProjectionScreen
+                {/* <AiOutlineFundProjectionScreen
                   style={{ marginBottom: "2px" }}
-                />{" "}
+                />{" "} */}
+                <img src={projecticon} width="20"/>
                 Projects
               </Nav.Link>
             </Nav.Item>
@@ -108,8 +116,7 @@ function NavBar() {
                 target="_blank"
                 className="fork-btn-inner"
               >
-                <CgGitFork style={{ fontSize: "1.2em" }} />{" "}
-                <AiFillStar style={{ fontSize: "1.1em" }} />
+                <img src={git} width="20"/>
               </Button>
             </Nav.Item>
           </Nav>

@@ -1,8 +1,10 @@
 import React from "react";
 import Card from "react-bootstrap/Card";
 import Button from "react-bootstrap/Button";
-import { CgWebsite } from "react-icons/cg";
-import { BsGithub } from "react-icons/bs";
+// import { CgWebsite } from "react-icons/cg";
+// import { BsGithub } from "react-icons/bs";
+import git from "../../Assets/skills/git.png";
+import projecticon from "../../Assets/icons/projects.png";
 
 function ProjectCards(props) {
   return (
@@ -14,8 +16,10 @@ function ProjectCards(props) {
           {props.description}
         </Card.Text>
         <Button variant="primary" href={props.ghLink} target="_blank">
-          <BsGithub /> &nbsp;
-          {props.isBlog ? "Blog" : "GitHub"}
+          {/* <BsGithub /> &nbsp; */}
+          <img src={git} width="20"/>
+
+          {props.isBlog ? "Blog" : " GitHub"}
         </Button>
         {"\n"}
         {"\n"}
@@ -29,8 +33,9 @@ function ProjectCards(props) {
             target="_blank"
             style={{ marginLeft: "10px" }}
           >
-            <CgWebsite /> &nbsp;
-            {"Demo"}
+            <img src={projecticon} width="20"/>
+            {/* <CgWebsite /> &nbsp; */}
+            {" Demo"}
           </Button>
         )}
       </Card.Body>

@@ -5,7 +5,6 @@ import { Container, Row, Col } from "react-bootstrap";
 import Home2 from "./Home2";
 
 import Type from "./Type";
-import Tilt from "react-parallax-tilt";
 import laptopImg from "../../Assets/profile-pic.jpg";
 
 
@@ -34,9 +33,7 @@ function Home() {
             </Col>
 
             <Col md={5} style={{ paddingBottom: 20 }}>
-              <Tilt>
-                <img src={laptopImg} className="img-fluid" alt="avatar" />
-              </Tilt>
+              <img src={laptopImg} className="img-fluid" alt="avatar" />
             </Col>
           </Row>
         </Container>

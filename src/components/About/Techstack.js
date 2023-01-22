@@ -1,7 +1,7 @@
 import React from "react";
 import { Col, Row } from "react-bootstrap";
 // import { renderIntoDocument } from "react-dom/test-utils";
-import { CgCPlusPlus } from "react-icons/cg";
+// import { CgCPlusPlus } from "react-icons/cg";
 import tf from "../../Assets/skills/tf.png";
 import c from "../../Assets/skills/c.png";
 import java from "../../Assets/skills/java.png";
@@ -14,16 +14,16 @@ import python from "../../Assets/skills/python.png";
 import git from "../../Assets/skills/git.png";
 
 
-import {
-  DiReact,
-  DiNodejs,
-  DiMongodb,
-  // DiPython,
-  // DiGit,
-} from "react-icons/di";
-import {
-  SiPytorch,
-} from "react-icons/si";
+// import {
+//   DiReact,
+//   DiNodejs,
+//   DiMongodb,
+//   // DiPython,
+//   // DiGit,
+// } from "react-icons/di";
+// import {
+//   SiPytorch,
+// } from "react-icons/si";
 
 function Techstack() {
   return (
@@ -90,27 +90,27 @@ function Techstack() {
       </Col>
       <Col xs={4} md={2} className="tech-icons">
         <span title="PyTorch">
-        <SiPytorch />
+        {/* <SiPytorch /> */}
         </span>
       </Col>
       <Col xs={4} md={2} className="tech-icons">
         <span title="Mongodb">
-        <DiMongodb />
+        {/* <DiMongodb /> */}
         </span>
       </Col>
       <Col xs={4} md={2} className="tech-icons">
         <span title="NodeJs">
-        <DiNodejs />
+        {/* <DiNodejs /> */}
         </span>
       </Col>
       <Col xs={4} md={2} className="tech-icons">
         <span title="React">
-        <DiReact />
+        {/* <DiReact /> */}
         </span>
       </Col>
       <Col xs={4} md={2} className="tech-icons">
         <span title="C++">
-        <CgCPlusPlus />
+        {/* <CgCPlusPlus /> */}
         </span>
       </Col>
     </Row>

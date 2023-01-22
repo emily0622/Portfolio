@@ -1,6 +1,7 @@
 import React from "react";
 import Card from "react-bootstrap/Card";
-import { ImPointRight } from "react-icons/im";
+// import { ImPointRight } from "react-icons/im";
+import staricon from "../../Assets/icons/star.jpg";
 
 function AboutCard() {
   return (
@@ -18,13 +19,13 @@ function AboutCard() {
           </p>
           <ul>
             <li className="about-activity">
-              <ImPointRight /> camping
+              <img src={staricon} width="20"/> camping
             </li>
             <li className="about-activity">
-              <ImPointRight /> doing puzzles
+            <img src={staricon} width="20"/> doing puzzles
             </li>
             <li className="about-activity">
-              <ImPointRight /> playing guitar
+            <img src={staricon} width="20"/> playing guitar
             </li>
           </ul>
         </blockquote>

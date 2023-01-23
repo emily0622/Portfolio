@@ -7,18 +7,20 @@ import { Col, Row } from "react-bootstrap";
 
 import micro from "../../Assets/skills/micro.svg.png";
 import jup from "../../Assets/skills/jup.png";
+import vsc from "../../Assets/skills/vsc.png";
+import linux from "../../Assets/skills/linux.png";
 
 function Toolstack() {
   return (
     <Row style={{ justifyContent: "center", paddingBottom: "50px" }}>
       <Col xs={4} md={2} className="tech-icons">
         <span title="Linux">
-        {/* <SiLinux /> */}
+        <img src={linux} width="100"/>
         </span>
       </Col>
       <Col xs={4} md={2} className="tech-icons">
         <span title="Visual Studio Code">
-        {/* <SiVisualstudiocode /> */}
+        <img src={vsc} width="100"/>
         </span>
       </Col>
 

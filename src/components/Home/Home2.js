@@ -7,7 +7,9 @@ import { Container, Row, Col } from "react-bootstrap";
   // AiOutlineTwitter,
   // AiFillInstagram,
 // } from "react-icons/ai";
-import git from "../../Assets/skills/git.png";
+import github from "../../Assets/icons/github.png";
+import linkedin from "../../Assets/icons/linkedin.png";
+
 // import { FaLinkedinIn } from "react-icons/fa";
 
 function Home2() {
@@ -69,7 +71,7 @@ function Home2() {
                   className="icon-colour  home-social-icons"
                 >
                   {/* <AiFillGithub /> */}
-                  <img src={git} width="20"/>
+                  <img src={github} width="20"/>
                 </a>
               </li>
               <li className="social-icons">
@@ -80,6 +82,7 @@ function Home2() {
                   className="icon-colour  home-social-icons"
                 >
                   {/* <FaLinkedinIn /> */}
+                  <img src={linkedin} width="20"/>
                 </a>
               </li>
             </ul>

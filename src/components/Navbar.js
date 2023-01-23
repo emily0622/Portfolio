@@ -6,7 +6,7 @@ import logo from "../Assets/logo_me.png";
 import Button from "react-bootstrap/Button";
 import { Link } from "react-router-dom";
 import git from "../Assets/skills/git.png";
-import homeicon from "../Assets/icons/home.jpg";
+import homeicon from "../Assets/icons/home.png";
 import abouticon from "../Assets/icons/about.png";
 import projecticon from "../Assets/icons/projects.png";
 
@@ -59,7 +59,7 @@ function NavBar() {
             <Nav.Item>
               <Nav.Link as={Link} to="/" onClick={() => updateExpanded(false)}>
                 {/* <AiOutlineHome style={{ marginBottom: "2px" }} /> Home */}
-                <img src={homeicon} width="20"/>
+                <img src={homeicon} width="35"/>
                 Home
               </Nav.Link>
             </Nav.Item>
@@ -85,8 +85,9 @@ function NavBar() {
                 {/* <AiOutlineFundProjectionScreen
                   style={{ marginBottom: "2px" }}
                 />{" "} */}
+
                 <img src={projecticon} width="20"/>
-                Projects
+                {" Projects"}
               </Nav.Link>
             </Nav.Item>
 

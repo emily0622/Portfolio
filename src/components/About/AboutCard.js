@@ -1,7 +1,7 @@
 import React from "react";
 import Card from "react-bootstrap/Card";
 // import { ImPointRight } from "react-icons/im";
-import staricon from "../../Assets/icons/star.jpg";
+import staricon from "../../Assets/icons/star.png";
 
 function AboutCard() {
   return (
